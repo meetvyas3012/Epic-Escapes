@@ -9,6 +9,7 @@ const hpp=require("hpp");
 const path=require("path");
 const pug=require("pug");
 const cookie_parser=require("cookie-parser");
+const compression=require("compression");
 
 const tour_router=require("D:/STUDY/NODE JS/natours/routers/tour_router");
 const user_router=require("D:/STUDY/NODE JS/natours/routers/user_router");
@@ -69,6 +70,7 @@ const limiter=rate_limiter({
 
 app.use("/api",limiter);
 
+
 app.use(express.static(path.join(__dirname,"public")));
 app.use(cookie_parser());
 
@@ -100,7 +102,7 @@ app.use(cookie_parser());
 // app.delete("/api/v1/tours/:id",delete_tour);
 
 // app.post("/api/v1/tours",add_tour);
-
+app.use(compression());
 
 app.use("/",view_router);
 app.use("/api/v1/bookings",booking_router);

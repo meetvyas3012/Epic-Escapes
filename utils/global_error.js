@@ -20,9 +20,8 @@ const  handle_jwt_expire_err = err =>
 
 const handle_validation_err_db=err => {
     
-    console.log(err.errors);
     const errors=Object.values(err.errors).map(el => el.message);
-    console.log(errors);
+  
     const message=`Invalid input data : ${errors.join("\n")}`;
 
     return new App_error(message,400);
@@ -66,8 +65,6 @@ module.exports=(err,req,res,next) => {
 
     err.statusCode=err.statusCode || 500;
     err.status=err.status || "error";
-
-    console.log(process.env.NODE_ENV);
 
     if (process.env.NODE_ENV==="development")
     {

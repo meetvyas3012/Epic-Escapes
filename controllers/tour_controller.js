@@ -55,7 +55,6 @@ exports.resize_tour_images=catch_async(async (req,res,next) => {
         .toFile(`public/img/tours/${req.body.imageCover}`);
 
     req.body.images=[];
-   console.log(req.params.id);
     await Promise.all(
         req.files.images.map(async (file,i) => {
 

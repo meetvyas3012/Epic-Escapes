@@ -107,7 +107,6 @@ app.use("/api/v1/bookings",booking_router);
 app.use("/api/v1/tours",tour_router);
 app.use("/api/v1/users",user_router); 
 app.use("/api/v1/reviews",review_router); 
-
 app.all("*",(req,res,next) => {
 
     next(new app_error(`Entered url:${req.originalUrl} is wrong`,404));

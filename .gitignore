@@ -1,0 +1,7 @@
+*.env
+node_modules
+public
+views
+routers/view_router.js
+controllers/view_controller.js
+.parcel-cache

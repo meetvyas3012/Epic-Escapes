@@ -1,6 +1,6 @@
 # Tours Backend
 
-An awesome tour booking site built on top of NodeJS, providing comprehensive functionality for user authentication, payment processing, tour management, and more. The backend follows the Model-View-Controller (MVC) architecture and utilizes MongoDB as its database.All the roues are protected throgh jwt tokens using Bearer authorization.Also implemented cookies for a user session.
+An awesome tour booking site backend built on top of NodeJS, providing comprehensive functionality for user authentication, payment processing, tour management, and more. The backend follows the Model-View-Controller (MVC) architecture and utilizes MongoDB as its database.All the roues are protected throgh jwt tokens using Bearer authorization.Also implemented cookies for a user session.
 
 ## Table of Contents
 - [Demo](#demo)

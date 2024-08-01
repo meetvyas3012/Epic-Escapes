@@ -9,7 +9,6 @@ An awesome tour booking site built on top of NodeJS, providing comprehensive fun
 - [Installation](#installation-)
 - [Usage](#usage-)
 - [API Endpoints](#api-endpoints)
-- [Deployment](#deployment-)
 - [Build With](#build-with-)
 - [To-do](#to-do-)
 - [Contributing](#contributing-)
@@ -138,16 +137,6 @@ An awesome tour booking site built on top of NodeJS, providing comprehensive fun
 - **Tour Stats**: `GET /api/v1/tours/tour-stats`
 - **Top 5 Cheap Tours**: `GET /api/v1/tours/top-5-cheap`
 - **Tours Within Radius**: `GET /api/v1/tours/tours-within/:distance/center/:latlng/unit/:unit`
-
-## Deployment 🌍
-
-### Steps:
-1. Initialize Git repository:
-   ```sh
-   git init
-   git add -A
-   git commit -m "Commit message"
-   ```
 
 ## Build With 🏗️
 - **NodeJS**: JavaScript runtime environment
